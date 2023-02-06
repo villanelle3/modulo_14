@@ -18,17 +18,18 @@ header{
     font-style: italic;
 }
 
-.nav-item a, .nav-item a:hover{
+#header1 .nav-item a, #header1 .nav-item a:hover{
     color: var(--shade4);
     text-shadow: 1px 1px 2px var(--shade2);
     font-family: 'Alegreya', serif;
 }
 
 
-.nav-pills .active{
-    background-color: var(--shade1);
+#header1 .nav .nav-item .active{
+    background-color: var(--shade1) !important;
     border-radius: 8px;
 }
+
 
 .navbar-toggler{
     background-color: var(--shade1);
@@ -55,4 +56,56 @@ body{
     left: 0;
     min-height: 400px;
     width:100%
+}
+
+.titulo{
+    color: var(--shade4);
+    text-shadow: 1px 1px 2px var(--shade2);
+}
+
+.lista {
+    list-style: none;
+}
+
+.lista li::before {
+    content: "\2023"; /* https://oinam.github.io/entities/ */
+    color: var(--shade4);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+#submenu .active{
+    background-color: var(--shade3);
+    color: var(--shade4);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--shade2);
+}
+
+button{
+    border: 0;
+    color: var(--shade4);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--shade2);
+}
+
+#contact{
+    background-color: var(--shade2);
+}
+
+#Enviar{
+    background-color: var(--shade4);
+    color: var(--shade1);
+}
+
+#Enviar:hover{
+    color: var(--shade4);
+    background-color: var(--shade3);
+}
+
+.social-links li{
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
 }
