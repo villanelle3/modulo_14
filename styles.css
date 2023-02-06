@@ -1,0 +1,58 @@
+:root {
+    --shade1: #f0ece2; 
+    --shade2: #dfd3c3; 
+    --shade3: #c7b198;
+    --shade4: #596e79; 
+}
+
+header{
+    background-color: var(--shade3);
+}
+
+.navbar-brand{
+    color: var(--shade4);
+    text-shadow: 1px 1px 2px var(--shade2);
+    font-weight: bolder;
+    font-family: 'Alegreya', serif;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.nav-item a, .nav-item a:hover{
+    color: var(--shade4);
+    text-shadow: 1px 1px 2px var(--shade2);
+    font-family: 'Alegreya', serif;
+}
+
+
+.nav-pills .active{
+    background-color: var(--shade1);
+    border-radius: 8px;
+}
+
+.navbar-toggler{
+    background-color: var(--shade1);
+}
+
+.navbar-brand:hover{
+    cursor: pointer;
+    color: var(--shade4);
+}
+
+body{
+    background-color: var(--shade1);
+}
+
+.carousel .carousel-item {
+    height: 500px;
+    width:100%
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    width:100%
+}
