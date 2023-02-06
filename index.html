@@ -71,7 +71,7 @@
     </button>
     </div>
 
-    <div data-bs-spy="scroll" data-bs-target="header1">
+    <div data-bs-spy="scroll" data-bs-target="header1" data-bs-smooth-scroll="true">
         <section id="about">
             <div class="pt-5 pb-5">
                 <div class="container">
@@ -79,7 +79,7 @@
                         <div class="col-md-5">
                             <img src="https://cdn.pixabay.com/photo/2012/07/06/00/56/plantation-51548_960_720.jpg" class="d-block w-100 rounded" alt="Fachada do museu">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="titulo">Sobre o Museu</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, nemo iure molestias enim a amet error impedit quo maiores deserunt corporis minus neque iste repudiandae similique quia sunt, rerum laudantium.</p>
                             <ul class="lista">
@@ -133,6 +133,21 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="pinturas">
                                 <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/08/04/21/02/museum-1570823_960_720.jpg" alt="">
+                                        <h5 class="titulo fw-bold mt-2">Artista reconhecido</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat iste eveniet vitae aliquid voluptatibus r</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/08/04/21/02/museum-1570823_960_720.jpg" alt="">
+                                        <h5 class="titulo fw-bold mt-2">Artista reconhecido</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat iste eveniet vitae aliquid voluptatibus r</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/08/04/21/02/museum-1570823_960_720.jpg" alt="">
+                                        <h5 class="titulo fw-bold mt-2">Artista reconhecido</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat iste eveniet vitae aliquid voluptatibus r</p>
+                                    </div>
                                     <div class="col-md-3">
                                         <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/08/04/21/02/museum-1570823_960_720.jpg" alt="">
                                         <h5 class="titulo fw-bold mt-2">Artista reconhecido</h5>
@@ -248,11 +263,11 @@
                         <form action="">
                             <div class="mb-3">
                                 <label for="nome" class="titulo form-label">Nome</label>
-                                <input type="text" id="nome" class="form-control" required>
+                                <input type="text" id="nome" class="form-control" required name="name">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="titulo form-label">Email</label>
-                                <input type="email" id="email" class="form-control" required>
+                                <input type="email" id="email" class="form-control" required name="email">
                             </div>
                             <div class="mb-3">
                                 <label for="tel" class="titulo form-label">Telefone (opicional)</label>
@@ -260,7 +275,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="men" class="titulo form-label">Mensagem</label>
-                                <textarea name="men" id="men" class="form-control" required></textarea>
+                                <textarea name="men" id="men" class="form-control" required name="msg"></textarea>
                             </div>
                             <button type="submit" class="btn titulo mt-2 mb-4" id="Enviar">Enviar</button>
                         </form>
@@ -291,6 +306,10 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script> <!--validação em portugues, retirar para validação em ingles-->
     <script src="./js.js"></script> 
 </body>
 </html>
